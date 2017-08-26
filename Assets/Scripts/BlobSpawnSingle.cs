@@ -6,21 +6,13 @@ using UnityEngine;
 public class BlobSpawnSingle : MonoBehaviour {
 	public GameObject blob_1;
 	public GameObject blob_2;
-	public GameObject blob_3;
-	public GameObject blob_4;
-	public GameObject blob_5;
-	public GameObject blob_6;
-	public GameObject blob_7;
-	public GameObject blob_7_5;
-	public GameObject blob_8;
 	public GameObject motherBlob;
-
 	GameObject blob_to_spawn;
 	int numberOfEnemies;
 
     private void Start()
 	{
-		InvokeRepeating ("spawn_enemy", 0, 5);
+		InvokeRepeating ("spawn_enemy", 0, 10);
 	}
 
 	void Update(){
@@ -29,44 +21,15 @@ public class BlobSpawnSingle : MonoBehaviour {
 
 	void spawn_enemy(){
 		
-		if (Time.timeSinceLevelLoad < 5.0f) {
+		if (Time.timeSinceLevelLoad < 10.0f) {
 			blob_to_spawn = blob_1;
 			numberOfEnemies = 10;
-		} else if (Time.timeSinceLevelLoad > 5.0f && Time.timeSinceLevelLoad < 10.0f) {
+		} else if (Time.timeSinceLevelLoad > 10.0f && Time.timeSinceLevelLoad < 20.0f) {
 			blob_to_spawn = blob_2;
 			numberOfEnemies = 10;
-		}
-		else if (Time.timeSinceLevelLoad > 10.0f && Time.timeSinceLevelLoad < 15.0f) {
-			blob_to_spawn = blob_3;
-			numberOfEnemies = 10;
-		}
-		else if (Time.timeSinceLevelLoad > 15.0f && Time.timeSinceLevelLoad < 20.0f) {
-			blob_to_spawn = blob_4;
-			numberOfEnemies = 10;
-		}
-		else if (Time.timeSinceLevelLoad > 20.0f && Time.timeSinceLevelLoad < 25.0f) {
-			blob_to_spawn = blob_5;
-			numberOfEnemies = 10;
-		}
-		else if (Time.timeSinceLevelLoad > 25.0f && Time.timeSinceLevelLoad < 30.0f) {
-			blob_to_spawn = blob_6;
-			numberOfEnemies = 10;
-		}
-		else if (Time.timeSinceLevelLoad > 30.0f && Time.timeSinceLevelLoad < 35.0f) {
-			blob_to_spawn = blob_7;
-			numberOfEnemies = 10;
-		}
-		else if (Time.timeSinceLevelLoad > 35.0f && Time.timeSinceLevelLoad < 40.0f) {
-			blob_to_spawn = blob_7_5;
-			numberOfEnemies = 10;
-		}
-		else if (Time.timeSinceLevelLoad > 40.0f && Time.timeSinceLevelLoad < 45.0f) {
-			blob_to_spawn = blob_8;
-			numberOfEnemies = 10;
-		}
-		else {
+		} else {
 			blob_to_spawn = motherBlob;
-			numberOfEnemies = 5;
+			numberOfEnemies = 1;
 		}
 		for (int i = 0; i < numberOfEnemies; i++) {
 			GameObject blob;

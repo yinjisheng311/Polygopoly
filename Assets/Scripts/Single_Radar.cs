@@ -15,7 +15,6 @@ public class Single_Radar : MonoBehaviour {
 	public static List<RadarObject> radObjects = new List<RadarObject>();
 
 	public static void RegisterRadarObject(GameObject o, Image i){
-		Debug.Log ("Image is coming from"+o.name);
 		Image image = Instantiate (i);
 		radObjects.Add (new RadarObject (){ owner = o, icon = image });
 		//Debug.Log (o.transform.position);

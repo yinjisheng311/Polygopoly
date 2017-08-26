@@ -6,10 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/EmilyBday/Level0.unity
+    path: Assets/Scenes/Level0.unity
   - enabled: 1
-    path: Assets/EmilyBday/Level1S.unity
+    path: Assets/Scenes/Level0M.unity
   - enabled: 1
-    path: Assets/EmilyBday/LoadingScene.unity
+    path: Assets/Scenes/Level1.unity
   - enabled: 1
-    path: Assets/EmilyBday/LevelMessages.unity
+    path: Assets/Scenes/Level1S.unity
+  - enabled: 0
+    path: Assets/Scenes/Lobby.unity
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity

@@ -28,9 +28,9 @@ public class LoadingScreenManager : MonoBehaviour {
 	AsyncOperation operation;
 	Scene currentScene;
 
-	public static int sceneToLoad = 1;
+	public static int sceneToLoad = 3;
 	// IMPORTANT! This is the build index of your loading scene. You need to change this to match your actual scene index
-	static int loadingSceneIndex = 2;
+	static int loadingSceneIndex = 4;
 
 	public static void LoadScene(int levelNum) {				
 		Application.backgroundLoadingPriority = ThreadPriority.High;
@@ -41,7 +41,7 @@ public class LoadingScreenManager : MonoBehaviour {
 	void Start() {
 		if (sceneToLoad < 0)
 			return;
-		sceneToLoad = 1;//change to 2:Level1, 5 for Level1S 
+		sceneToLoad = 3;
 		fadeOverlay.gameObject.SetActive(true); // Making sure it's on so that we can crossfade Alpha
 		currentScene = SceneManager.GetActiveScene();
         Debug.Log("Starting loading scene coroutine...");
@@ -54,17 +54,11 @@ public class LoadingScreenManager : MonoBehaviour {
 		yield return null; 
 
 		FadeIn();
-		yield return new WaitForSeconds (4.0f);
-		Debug.Log("After waiting for 4 seconds");
-		ShowCompletionVisuals();
-		yield return new WaitForSeconds (1.0f);
-		Debug.Log("After waiting for 4 seconds");
 		StartOperation(levelNum);
 
 		//fake loading 
-		yield return new WaitForSeconds (10.0f);
-        Debug.Log("After waiting for 4 seconds");
-
+		yield return new WaitForSeconds (2.0f);
+        Debug.Log("After waiting for 2 seconds");
 
 		float lastProgress = 0f;
 
@@ -103,12 +97,15 @@ public class LoadingScreenManager : MonoBehaviour {
 
     private void StartOperation(int levelNum) {
 
+
+
+
 		Application.backgroundLoadingPriority = loadThreadPriority;
 		operation = SceneManager.LoadSceneAsync(levelNum, loadSceneMode);
 
 
 		if (loadSceneMode == LoadSceneMode.Single)
-			operation.allowSceneActivation = true;
+			operation.allowSceneActivation = false;
 	}
 
 	private bool DoneLoading() {
@@ -128,7 +125,7 @@ public class LoadingScreenManager : MonoBehaviour {
 		loadingDoneIcon.gameObject.SetActive(false);
 		float toBeFilled = Random.Range (0.1f, 0.6f);
 		progressBar.fillAmount = toBeFilled;
-		string[] listOfExtraInfo = {"Survive till the end, \n and secret birthday messages will be revealed!"};
+		string[] listOfExtraInfo = {"Collusion is the act of working\n" + "together to establish a monopoly", "Preserve the monopoly of Polygons!\nCommence Operation Polygopoly!", "Polygon is awesome.\nPolygon is life.", "Zerogons were Polygons in the past but\n they gained too many sides and lost themselves", "The more sides a Polygon gain,\n the more it becomes a Zerogon"};
 		int extraToBeChosen = Random.Range (0, listOfExtraInfo.Length-1);
 
 		extraInfo.text = listOfExtraInfo[extraToBeChosen];

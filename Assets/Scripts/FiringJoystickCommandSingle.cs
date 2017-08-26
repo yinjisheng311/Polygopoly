@@ -41,7 +41,6 @@ public class FiringJoystickCommandSingle : MonoBehaviour {
 	void Update(){
 
 
-        Debug.Log("Irritating log that checks for any joystick command");
         if (laser)
         {
             Debug.Log("LASER HAS BEEN PICKED UP");

@@ -23,7 +23,6 @@ public class PotionSpawnSingle : MonoBehaviour {
 			GameObject healthboost = Instantiate(potion, spawnPosition, Quaternion.identity) as GameObject;
 
 			//NetworkServer.Spawn(healthboost);
-			Debug.Log("Potion spawned");
 		}
 
 	}

@@ -34,68 +34,28 @@ public class ScoreUpdaterSingle : MonoBehaviour {
         int currentScore = 0;
         if (System.Int32.TryParse(counter.text, out currentScore))
         {
-			if (blobName.Equals ("Blob_level1 1_Ryan(Clone)")) {
-				currentScore+=4;
+			if (blobName.Equals ("Blob_level1_Ryan(Clone)")) {
+				currentScore++;
 				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
 					SetHighScore (currentScore);
 				}
 
-			}else if (blobName.Equals ("Blob_level1 1_Ryan 1(Clone)")) {
-				currentScore+=4;
+			} else if (blobName.Equals ("Blob_level1 1_Ryan(Clone)")) {
+				currentScore += 2;
 				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
 					SetHighScore (currentScore);
 				}
-
-			}else if (blobName.Equals ("Blob_level1 1_Ryan 2(Clone)")) {
-				currentScore+=4;
+			} else if (blobName.Equals ("Blob_level1 1 1_Ryan(Clone)")) {
+				currentScore += 5;
 				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
 					SetHighScore (currentScore);
 				}
-
-			}else if (blobName.Equals ("Blob_level1 1_Ryan 3(Clone)")) {
-				currentScore+=4;
-				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
-					SetHighScore (currentScore);
-				}
-
-			}else if (blobName.Equals ("Blob_level1 1_Ryan 4(Clone)")) {
-				currentScore+=4;
-				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
-					SetHighScore (currentScore);
-				}
-
-			} else if (blobName.Equals ("Blob_level1_Ryan(Clone)")) {
-				currentScore += 4;
-				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
-					SetHighScore (currentScore);
-				}
-			}  else if (blobName.Equals ("Blob_level1_Ryan 1(Clone)")) {
-				currentScore += 4;
-				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
-					SetHighScore (currentScore);
-				}
-			}else if (blobName.Equals ("Blob_level1_Ryan 2(Clone)")) {
-				currentScore += 4;
-				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
-					SetHighScore (currentScore);
-				}
-			}else if (blobName.Equals ("Blob_level1_Ryan 3(Clone)")) {
-				currentScore += 4;
-				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
-					SetHighScore (currentScore);
-				}
-			}else if (blobName.Equals ("Blob_level1_Ryan 4(Clone)")) {
-				currentScore += 1;
-				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
-					SetHighScore (currentScore);
-				}
-			}else if (blobName.Equals ("Blob_level1 1 1_Ryan(Clone)")) {
-				currentScore += 8;
+			} else if (blobName.Equals ("Child Blob_RyanClone)")) {
+				currentScore += 2;
 				if (currentScore > PlayerPrefs.GetInt ("Highscore", 0)) {
 					SetHighScore (currentScore);
 				}
 			}
-				
         }
         else
         {

@@ -165,7 +165,6 @@ public class EnemyControllerSingle : MonoBehaviour {
 		}
 		*/
 		else {
-			Debug.Log ("HELLO");
 		}
 	}
 
