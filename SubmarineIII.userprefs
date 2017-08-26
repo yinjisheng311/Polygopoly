@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GiveBirthSingle.cs">
+    <Files>
+      <File FileName="Assets/Scripts/LoadingScreenManager.cs" Line="63" Column="1" />
+      <File FileName="Assets/LoadNext.cs" Line="29" Column="23" />
+      <File FileName="Assets/LoadBirthdayMessage.cs" Line="9" Column="2" />
+      <File FileName="Assets/Scripts/ScoreUpdaterSingle.cs" Line="93" Column="22" />
+      <File FileName="Assets/NumberOfMessages.cs" Line="25" Column="50" />
+      <File FileName="Assets/Scripts/BlobSpawnSingle.cs" Line="65" Column="23" />
+      <File FileName="Assets/Scripts/ReloadGame.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GiveBirthSingle.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

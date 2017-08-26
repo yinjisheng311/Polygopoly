@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{3276710E-B80A-F65E-CFD1-E9B8D084E40B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_VIDEO;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Aish\FlickeringLight.cs" />
+     <Compile Include="Assets\DisplayBirthdayWishes.cs" />
+     <Compile Include="Assets\GoHomeSingle.cs" />
+     <Compile Include="Assets\GoSettings.cs" />
+     <Compile Include="Assets\LoadBirthdayMessage.cs" />
+     <Compile Include="Assets\LoadNext.cs" />
+     <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
+     <Compile Include="Assets\Lobby\Scripts\EventSystemChecker.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyHook.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyInfoPanel.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyMainMenu.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyManager.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyPlayer.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyPlayerList.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerEntry.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
+     <Compile Include="Assets\NumberOfMessages.cs" />
+     <Compile Include="Assets\Scripts\BlobSpawn.cs" />
+     <Compile Include="Assets\Scripts\BlobSpawnSingle.cs" />
+     <Compile Include="Assets\Scripts\BulletController.cs" />
+     <Compile Include="Assets\Scripts\BulletControllerSingle.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\ChangeToGreenButton.cs" />
+     <Compile Include="Assets\Scripts\CloseSettingsScript.cs" />
+     <Compile Include="Assets\Scripts\DisplayText.cs" />
+     <Compile Include="Assets\Scripts\DisplayTextSingle.cs" />
+     <Compile Include="Assets\Scripts\EnemyBlobHealth.cs" />
+     <Compile Include="Assets\Scripts\EnemyBlobHealthSingle.cs" />
+     <Compile Include="Assets\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\EnemyControllerSingle.cs" />
+     <Compile Include="Assets\Scripts\ExpandandContract.cs" />
+     <Compile Include="Assets\Scripts\Fading.cs" />
+     <Compile Include="Assets\Scripts\FiringCommand.cs" />
+     <Compile Include="Assets\Scripts\FiringJoystickCommand.cs" />
+     <Compile Include="Assets\Scripts\FiringJoystickCommandSingle.cs" />
+     <Compile Include="Assets\Scripts\GiveBirth.cs" />
+     <Compile Include="Assets\Scripts\GiveBirthSingle.cs" />
+     <Compile Include="Assets\Scripts\GlobalHighScore.cs" />
+     <Compile Include="Assets\Scripts\GoBack.cs" />
+     <Compile Include="Assets\Scripts\GoHome.cs" />
+     <Compile Include="Assets\Scripts\GoSettings.cs" />
+     <Compile Include="Assets\Scripts\HealthBoost.cs" />
+     <Compile Include="Assets\Scripts\HealthBoostSingle.cs" />
+     <Compile Include="Assets\Scripts\HostPolygons.cs" />
+     <Compile Include="Assets\Scripts\LaserController.cs" />
+     <Compile Include="Assets\Scripts\LaserControllerSingle.cs" />
+     <Compile Include="Assets\Scripts\ListServers.cs" />
+     <Compile Include="Assets\Scripts\LoadTargetSceneButton.cs" />
+     <Compile Include="Assets\Scripts\LoadingScreenManager.cs" />
+     <Compile Include="Assets\Scripts\MainPanelScript.cs" />
+     <Compile Include="Assets\Scripts\MakeRadarObject.cs" />
+     <Compile Include="Assets\Scripts\Make_Radar_Object_Single.cs" />
+     <Compile Include="Assets\Scripts\MissileController.cs" />
+     <Compile Include="Assets\Scripts\MultiplayerClick.cs" />
+     <Compile Include="Assets\Scripts\NetworkHost.cs" />
+     <Compile Include="Assets\Scripts\PInfoPanel.cs" />
+     <Compile Include="Assets\Scripts\PLobbyCountdownPanel.cs" />
+     <Compile Include="Assets\Scripts\PLobbyManager.cs" />
+     <Compile Include="Assets\Scripts\PLobbyPlayer.cs" />
+     <Compile Include="Assets\Scripts\PLobbyPlayerList.cs" />
+     <Compile Include="Assets\Scripts\PLobbyServerEntry.cs" />
+     <Compile Include="Assets\Scripts\PLobbyServerList.cs" />
+     <Compile Include="Assets\Scripts\PMainPanel.cs" />
+     <Compile Include="Assets\Scripts\POnEnterLobby.cs" />
+     <Compile Include="Assets\Scripts\PotionSpawn.cs" />
+     <Compile Include="Assets\Scripts\PotionSpawnSingle.cs" />
+     <Compile Include="Assets\Scripts\QuitGame.cs" />
+     <Compile Include="Assets\Scripts\Radar.cs" />
+     <Compile Include="Assets\Scripts\ReloadGame.cs" />
+     <Compile Include="Assets\Scripts\ScoreUpdater.cs" />
+     <Compile Include="Assets\Scripts\ScoreUpdaterSingle.cs" />
+     <Compile Include="Assets\Scripts\ScrollingObject.cs" />
+     <Compile Include="Assets\Scripts\Shatter.cs" />
+     <Compile Include="Assets\Scripts\Single_Radar.cs" />
+     <Compile Include="Assets\Scripts\SingleplayerClick.cs" />
+     <Compile Include="Assets\Scripts\SliderChangeVolume.cs" />
+     <Compile Include="Assets\Scripts\SubmarineHealth.cs" />
+     <Compile Include="Assets\Scripts\SubmarineHealthSingle.cs" />
+     <Compile Include="Assets\Scripts\SubmarinePlayer.cs" />
+     <Compile Include="Assets\Scripts\SubmarinePlayerSingle.cs" />
+     <Compile Include="Assets\Scripts\UpdateVolume.cs" />
+     <Compile Include="Assets\Scripts\infinitebackground.cs" />
+     <None Include="Assets\Lobby\Documentation.txt" />
+     <None Include="Assets\Lobby\Instruction.txt" />
+     <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.shader" />
+     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Shader\Additive_Base.shader" />
+     <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.cginc" />
+     <None Include="Assets\Standard Assets\Effects\LensAberrations\Resources\LensAberrations.shader" />
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{92E0E81E-9B15-C7D8-6ACA-6F5869775D8B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

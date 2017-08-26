@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 90aa94c61d8b1469cbc3a7de1c3b61b5
+timeCreated: 1492338867
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - healthBar: {instanceID: 0}
+  - healthBarBackground: {fileID: 224659814143099556, guid: 8debd52bed72e504c9d8236bb5957739,
+      type: 2}
+  - healthBarBorder: {instanceID: 0}
+  - shattered_pieces: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

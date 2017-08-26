@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Missile
+  - Blob
+  - Submarine
+  - healthpotion
+  - Radar
+  - Player1
+  - Player2
+  - Explosion
+  - Player1
+  - Player2
+  - Background
+  - DamageImage
+  - Canvas
+  - End
+  - Winner
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ignore
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2131387107
+    locked: 0
+  - name: Midground
+    uniqueID: 905364193
+    locked: 0
+  - name: Foreground
+    uniqueID: 2800105533
+    locked: 0
